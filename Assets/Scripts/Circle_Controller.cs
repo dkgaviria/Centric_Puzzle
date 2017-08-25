@@ -11,14 +11,12 @@ public class Circle_Controller : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		circles = GameObject.FindGameObjectsWithTag("Subcircle");
-		// circleRotations = new Vector3[circles.Length]; 
+		circles = GameObject.FindGameObjectsWithTag("Subcircle"); 
 
 		for (int i = 0; i < circles.Length; i++) {
 
 			// randomly rotate, and keep track of the rotation
 			Vector3 randomRotation = new Vector3 (0, 22.5f * Random.Range (2, 25), 0);
-			// circleRotations[i] = randomRotation;
 			circles[i].transform.Rotate(randomRotation);
 
 			// add subcircle controller
@@ -41,9 +39,6 @@ public class Circle_Controller : MonoBehaviour {
         {
             threshold = mouseY;
             subcircle.transform.Rotate(new Vector3(0,22.5f,0));
-			// circleRotations[System.Array.IndexOf (circles, subcircle)] = new Vector3(0,22.5f,0)
-            
-
         }
 
         else if(threshold - mouseY <= -30)
@@ -74,7 +69,6 @@ public class Circle_Controller : MonoBehaviour {
 
 			// randomly rotate, and keep track of the rotation
 			Vector3 randomRotation = new Vector3 (0, 22.5f * Random.Range (2, 25), 0);
-			// circleRotations[i] = randomRotation;
 			circles[i].transform.Rotate(randomRotation);
 
 			// add subcircle controller
