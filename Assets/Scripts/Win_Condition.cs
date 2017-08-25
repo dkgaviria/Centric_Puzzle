@@ -10,18 +10,18 @@ public class Win_Condition : MonoBehaviour {
     {
 
     }
-    private void Win_Condition.WinGame()
-    {
-        if (correct == 0)
-            {
-               MonoBehaviour.print("Good Work");
-            }
-        }
+//    private void Win_Condition.WinGame()
+//    {
+//        if (correct == 0)
+//            {
+//               MonoBehaviour.print("Good Work");
+//            }
+//    }
 		
-	}
+}
 	
 	// Update is called once per frame
-	void Update () {
+	// void Update () {
 		
-	}
-}
+	// }
+
